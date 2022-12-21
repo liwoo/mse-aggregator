@@ -1,0 +1,25 @@
+specVersion: 0.34.0
+name: mse-funcs
+runtime: rust
+registry: ""
+image: ""
+imageDigest: ""
+created: 2022-12-21T23:59:59.909592+02:00
+invocation:
+  format: http
+build:
+  buildpacks:
+  - docker.io/paketocommunity/rust
+  builder: ""
+  buildEnvs: []
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
